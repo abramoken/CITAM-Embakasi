@@ -1,0 +1,163 @@
+main{
+    min-height: 80vh;
+}
+
+/* COLOURS */
+
+.page-color{
+    color: #dd3333 !important;
+}
+
+/* NAVIGATION SECTION */
+#nav-section-1 {
+    background-color: #000000;
+    color: #fff;
+    height: 78px;
+    font-family: Georgia, Times, 'Times New Roman', 'Open Sans', Arial
+}
+#nav-section-1 a {
+    color: #fff;
+    font-size: 11px;
+    padding-bottom: 0;
+}
+@media (max-width: 990px) {
+    #nav-section-1 {
+        background-color: #000000;
+        color: #fff;
+        height: 0px;
+        font-family: 'Open Sans', Arial
+    }
+    #nav-section-1 a {
+        color: #fff;
+        font-size: 11px;
+        padding-bottom: 0;
+    }
+}
+
+#top-links a:hover {
+    color: rgb(255, 0, 0);
+    background-color: #000000;
+}
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu>a:after {
+    /* content: "\f0da";
+    float: right;
+    border: none; */
+    font-family: 'FontAwesome';
+  }
+  
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  @media (min-width: 991px) {
+    .dropdown-menu {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .bg-image {
+    background-image: url('../img/profile.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+}
+
+/* .nav-pills-custom .nav-link.active {
+    color: #dd3333;
+    background-color: #dd3333;
+} */
+
+.link {
+    padding: 35px 15px 0px 0px;
+    font-family: 'Open Sans', Arial;
+    font-size: 12px !important;
+}
+
+/* TABS */
+#v-pills-tab> a{
+    color: #fff;
+    background-color: #000000;
+}
+
+#v-pills-tab> a:hover{
+    color: #fff;
+    background-color: #dd3333;
+}
+
+#v-pills-tab> a.active{
+    color: #fff;
+    background-color: #dd3333;
+}
+
+#line {
+    background-color: dimgrey !important;
+    color: dimgrey !important;
+    opacity: 0.3;
+    height: 1px !important;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+/* FOOTER */
+#footer-section-1 {
+    background-color: #000000;
+    color: #fff;
+    height: 78px;
+    font-family: 'Open Sans', Arial
+}
+#footer-section-1 a {
+    color: #fff;
+    font-size: 11px;
+    padding-bottom: 0;
+}
+@media (max-width: 800px) {
+    #footer-section-1 {
+        background-color: #000000;
+        color: #fff;
+        height: 156px;
+        font-family: 'Open Sans', Arial
+    }
+    #footer-section-1 a {
+        color: #fff;
+        font-size: 11px;
+        padding-bottom: 0;
+    }
+    .float-left{
+        padding-top: 10px !important;
+    }
+    #moves{
+        float: left !important;
+    }
+}

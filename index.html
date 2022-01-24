@@ -27,10 +27,10 @@
                             </button>
                             <div class="collapse navbar-collapse pt-3" id="navbarNavAltMarkup">
                                 <div class="navbar-nav" id="top-links">
-                                    <a class="nav-item nav-link " href="#">BOOK A SEAT</a>
-                                    <a class="nav-item nav-link" href="#">BOL</a>
-                                    <a class="nav-item nav-link" href="#">HR PORTAL</a>
-                                    <a class="nav-item nav-link" href="#">STAFF E-MAIL</a>
+                                    <a class="nav-item nav-link " href="https://usalamakanisani.com/citam/book/">BOOK A SEAT</a>
+                                    <a class="nav-item nav-link" href="https://citam-portal-staff.azurewebsites.net/">BOL</a>
+                                    <a class="nav-item nav-link" href="https://portal.citam.org:8020/">HR PORTAL</a>
+                                    <a class="nav-item nav-link" href="https://www.office.com/">STAFF E-MAIL</a>
                                 </div>
                             </div>
                         </nav>
@@ -142,91 +142,94 @@
         <!-- Container -->
         <div class="container py-5">
             <div class="row pb-3">
-                <div class="col-md-9">
-                    <h2>
+                <div class="col">
+                    <h2 style="font-family: 'Open Sans', Arial;">
                         <b>CITAM Embakasi</b>
                     </h2>
                     <hr>
                 </div>
-                <div class="col-md-3"></div>
             </div>
             <div class="row no-gutter">
                 <!-- The image half -->
-                <div class="col-md-4 d-none d-md-flex bg-image"></div>
-                
+                <!-- d-none d-md-flex bg-image -->
+                <div class="col-md-4" id="services">
+                    <div class="card rounded shadow h-100">
+                        <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                        </iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Our Services</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, suscipit perspiciatis. Asperiores?</p>
+                            <a href="https://www.youtube.com/channel/UCiTB3GGVVdj6Q0omF7Z66Qw" class="nav-link text-center">More on our youtube Channel</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <!-- Tabs nav -->
-                            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true">
-                                    <i class="fas fa-user mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Sunday Services</span>
-                                </a>
+                    <div class="p-5 bg-white rounded shadow mb-5 h-100">
+                        <!-- Bordered tabs-->
+                        <ul id="myTab1" role="tablist" class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+                            <li class="nav-item flex-sm-fill">
+                                <a id="home1-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">Sunday Services</a>
+                            </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="profile1-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Other Services</a>
+                            </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="contact1-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0 border">Our Contacts</a>
+                            </li>
+                        </ul>
+                        <div id="myTab1Content" class="tab-content">
+                            <div id="home1" style="background-color: #f8f8f8;" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+                                <h4 class="font-italic mb-4">Sunday Services</h4>
+                                <p class="text-muted mb-2" style="font-family: 'Open Sans', Arial;">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <b>Prayer Service:</b> 6:30am – 7:30 am</li>
+                                        <li>
+                                            <b>First Service:</b>
+                                        </li>
+                                        <li>
+                                            <b>Family Service:</b> 8:00 am – 10:00 am</li>
+                                        <li>
+                                            <b>Sunday School:</b> 8:30 am-10:00 am</li>
+                                        <li>
+                                            <b>Teens Service:</b> 8:00 am-10:00 am</li>
+                                        <li>
+                                            <b>Family Service:</b> 11:00 am – 1:00 pm</li>
+                                        <li>
+                                            <b>Sunday School:</b> 11:30 am-1:00 pm</li>
+                                        <li>
+                                            <b>Young Professionals/Light Service:</b> 11:00am-1:00 pm</li>
+                                    </ul>
 
-                                <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                    aria-selected="false">
-                                    <i class="fas fa-calendar-minus-o mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Other Services</span>
-                                </a>
-
-                                <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                    aria-selected="false">
-                                    <i class="fas fa-star mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">OUR CONTACTS</span>
-                                </a>
-
+                                </p>
+                            </div>
+                            <div id="profile1" style="background-color: #f8f8f8;" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                                <h4 class="font-italic mb-4">Other Services</h4>
+                                <p class="text-muted mb-2" style="font-family: 'Open Sans', Arial;">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <b>Midweek Wednesdays:</b> 6:00pm – 7:30pm</li>
+                                        <li>
+                                            <b>All Night Prayer</b> – Every last Friday of the Month</li>
+                                        <li>
+                                            <b>Safari Groups</b> – Mon-Sun Time: as per group</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div id="contact1" style="background-color: #f8f8f8;" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                                <h4 class="font-italic mb-4">OUR CONTACTS</h4>
+                                <p class="text-muted mb-2" style="font-family: 'Open Sans', Arial;">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <b>Cell Number:</b> 0709 861 365</li>
+                                        <li>
+                                            <b>Email:</b> embakasi@citam.org</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
-
-                        <div class="col-md-9">
-                            <!-- Tabs content -->
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <h4 class="font-italic mb-4">Sunday Services</h4>
-                                    <p class="text-muted mb-2">
-                                        <b>Prayer Service:</b> 6:30am – 7:30 am
-                                        <br>
-
-                                        <b>First Service:</b>
-                                        <br>
-
-                                        <b>Family Service:</b> 8:00 am – 10:00 am
-                                        <br>
-                                        <b>Sunday School:</b> 8:30 am-10:00 am
-                                        <br>
-                                        <b>Teens Service:</b> 8:00 am-10:00 am
-                                        <br>
-
-                                        <b>Family Service:</b> 11:00 am – 1:00 pm
-                                        <br>
-                                        <b>Sunday School:</b> 11:30 am-1:00 pm
-                                        <br>
-                                        <b>Young Professionals/Light Service:</b> 11:00am-1:00 pm</p>
-                                </div>
-
-                                <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <h4 class="font-italic mb-4">Other Services</h4>
-                                    <p class="text-muted mb-2">
-                                        <b>Midweek Wednesdays:</b> 6:00pm – 7:30pm
-                                        <br>
-                                        <b>All Night Prayer</b> – Every last Friday of the Month
-                                        <br>
-                                        <b>Safari Groups</b> – Mon-Sun Time: as per group</p>
-                                </div>
-
-                                <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                    <h4 class="font-italic mb-4">OUR CONTACTS</h4>
-                                    <p class="text-muted mb-2">
-                                        <b>Cell Number:</b> 0709 861 365
-                                        <br>
-
-                                        <b>Email:</b> embakasi@citam.org</p>
-                                </div>
-
-                            </div>
-                        </div>
+                        <!-- End bordered tabs -->
                     </div>
                 </div>
             </div>
@@ -237,7 +240,10 @@
         <div class="">
             <hr id="line">
             <div class="container pt-5">
-                <p class="text-center">Thanks for Visiting</p>
+                <p class="text-center" style="font-family: 'Open Sans', Arial; color: dimgrey !important;
+                opacity: 0.6;">
+                    <b>Thanks for Visiting</b>
+                </p>
                 <div class="row">
                     <div class="col-sm-4 text-center">
                         <div class="pt-4">
@@ -317,6 +323,20 @@
 
             });
         });
+    </script>
+    <script>
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#dd3333"
+                count = 1;        
+            }
+            else {
+                property.style.backgroundColor = "#000000"
+                count = 0;
+            }
+        }
     </script>
 </body>
 

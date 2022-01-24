@@ -34,6 +34,12 @@ main{
     }
 }
 
+@media (max-width: 700px) { 
+    #services { 
+      padding: 0px 0px 10px 0px; 
+    }
+  }
+
 #top-links a:hover {
     color: rgb(255, 0, 0);
     background-color: #000000;
@@ -62,12 +68,26 @@ main{
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
   }
-
-  .bg-image {
+.card-body> a{
+    background-color: #dd3333;
+    border-color: white;
+    border: 0px;
+    color: #fff;  
+}
+.card-body> a:hover{
+    color: #fff;
+    background-color: #000000;
+}
+.card-body> a:focus{
+    color: #fff;
+    background-color: #000000;
+}
+  /* .bg-image {
     background-image: url('../img/profile.jpg');
     background-size: cover;
+    max-height: 79vh;
     background-position: center center;
-  }
+  } */
 
   .nav-pills-custom .nav-link {
     color: #aaa;
@@ -75,31 +95,10 @@ main{
     position: relative;
 }
 
-/* .nav-pills-custom .nav-link.active {
-    color: #dd3333;
-    background-color: #dd3333;
-} */
-
 .link {
     padding: 35px 15px 0px 0px;
     font-family: 'Open Sans', Arial;
     font-size: 12px !important;
-}
-
-/* TABS */
-#v-pills-tab> a{
-    color: #fff;
-    background-color: #000000;
-}
-
-#v-pills-tab> a:hover{
-    color: #fff;
-    background-color: #dd3333;
-}
-
-#v-pills-tab> a.active{
-    color: #fff;
-    background-color: #dd3333;
 }
 
 #line {
@@ -109,26 +108,36 @@ main{
     height: 1px !important;
 }
 
+/* Tabs */  
+  /* With arrow tabs */
+  .with-arrow .nav-link{
+    color: #fff;
+    font-family: 'Open Sans', Arial;
+    background-color: #000000;
+  }
+  .with-arrow .nav-link:hover{
+    color: #fff;
+    background-color: #dd3333;
+  }
 
-/* Add indicator arrow for the active tab */
-@media (min-width: 992px) {
-    .nav-pills-custom .nav-link::before {
-        content: '';
-        display: block;
-        border-top: 8px solid transparent;
-        border-left: 10px solid #fff;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        top: 50%;
-        right: -10px;
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-}
-
-.nav-pills-custom .nav-link.active::before {
-    opacity: 1;
-}
+  .with-arrow .nav-link.active {
+    color: #fff;
+    background-color: #dd3333;
+    position: relative;
+  }
+  
+  .with-arrow .nav-link.active::after {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #dd3333;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+  
 
 /* FOOTER */
 #footer-section-1 {

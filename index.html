@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Top Navigation -->
     <section class="container-fluid" id="nav-section-1">
         <div class="container row">
             <div class="col-md-6"></div>
@@ -58,86 +59,144 @@
             </div>
         </div>
     </section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-        <div class="container">
-            <div class="justify-content-center">
-                <a href="index.html" class="navbar-brand font-weight-bold">
-                    <div class="row">
-                        <div class="col-sm">
-                            <img src="/img/logo.PNG" alt="logo" class="img-fluid">
+
+    <!-- Second Navigation -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-white bg-white py-3">
+            <div class="container">
+                <div class="justify-content-center" style="margin-top: -20px;">
+                    <a href="index.html" class="navbar-brand font-weight-bold">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/img/logo.PNG" alt="logo" style="height: 100px;" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarContent" class="collapse navbar-collapse pl-5" style="margin-top: -30px;">
+                    <ul class="navbar-nav mr-auto" style="font-family: 'Open Sans', Arial; font-size: 16px; font-weight: bold;">
+                        <li class="nav-item text-uppercase">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">Let's Connect</a>
+                            <ul aria-labelledby="dropdownMenu0" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Level one dropdown -->
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">About</a>
+                            <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+
+                                <li class="dropdown-divider"></li>
+
+                                <!-- Level two dropdown-->
+                                <li class="dropdown-submenu">
+                                    <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                        <li>
+                                            <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                                        </li>
+
+                                        <!-- Level three dropdown-->
+                                        <li class="dropdown-submenu">
+                                            <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                                            <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                                                <li>
+                                                    <a href="#" class="dropdown-item">3rd level</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="dropdown-item">3rd level</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- End Level three -->
+
+                                        <li>
+                                            <a href="#" class="dropdown-item">level 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">level 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- End Level two -->
+                            </ul>
+                        </li>
+                        <!-- End Level one -->
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Newsletters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Carriers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">Locations</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu3" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">Engage</a>
+                            <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu4" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">Reach Out</a>
+                            <ul aria-labelledby="dropdownMenu4" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu4" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">Give</a>
+                            <ul aria-labelledby="dropdownMenu4" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a href="#" class="dropdown-item">Some action </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Some other action</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div id="navbarContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <!-- Level one dropdown -->
-                    <li class="nav-item dropdown">
-                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
-                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
-                            <li>
-                                <a href="#" class="dropdown-item">Some action </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Some other action</a>
-                            </li>
-
-                            <li class="dropdown-divider"></li>
-
-                            <!-- Level two dropdown-->
-                            <li class="dropdown-submenu">
-                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
-                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                    <li>
-                                        <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
-                                    </li>
-
-                                    <!-- Level three dropdown-->
-                                    <li class="dropdown-submenu">
-                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
-                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
-                                            <li>
-                                                <a href="#" class="dropdown-item">3rd level</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="dropdown-item">3rd level</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- End Level three -->
-
-                                    <li>
-                                        <a href="#" class="dropdown-item">level 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">level 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- End Level two -->
-                        </ul>
-                    </li>
-                    <!-- End Level one -->
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
     <main>
         <!-- Container -->
         <div class="container py-5">
@@ -152,13 +211,14 @@
             <div class="row no-gutter">
                 <!-- The image half -->
                 <!-- d-none d-md-flex bg-image -->
+                <!-- https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1 -->
                 <div class="col-md-4" id="services">
                     <div class="card rounded shadow h-100">
-                        <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                        <iframe style="width: 100%;" height="315" src="...">
                         </iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Our Services</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, suscipit perspiciatis. Asperiores?</p>
+                            <h5 class="card-title" style="font-family: Georgia, Times, 'Times New Roman';">Our Services</h5>
+                            <p class="card-text" style="font-family: 'Open Sans', Arial;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, suscipit perspiciatis. Asperiores?</p>
                             <a href="https://www.youtube.com/channel/UCiTB3GGVVdj6Q0omF7Z66Qw" class="nav-link text-center">More on our youtube Channel</a>
                         </div>
                     </div>
@@ -324,20 +384,7 @@
             });
         });
     </script>
-    <script>
-        var count = 1;
-        function setColor(btn, color) {
-            var property = document.getElementById(btn);
-            if (count == 0) {
-                property.style.backgroundColor = "#dd3333"
-                count = 1;        
-            }
-            else {
-                property.style.backgroundColor = "#000000"
-                count = 0;
-            }
-        }
-    </script>
+
 </body>
 
 </html>

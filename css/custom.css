@@ -71,6 +71,16 @@ main{
 .navbar-nav .nav-item> a{
     color: black;
 }
+
+/* Bars */
+.clas{
+    border-bottom: 2px solid #dd3333; 
+    width: auto; 
+}
+.bar{
+    padding-right: 0.5rem !important; 
+    padding-left: 0.5rem !important;
+}
 .card-body> a{
     background-color: #dd3333;
     border-color: white;
